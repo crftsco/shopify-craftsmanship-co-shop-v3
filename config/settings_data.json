@@ -23,14 +23,14 @@
         "type": "product_category",
         "settings": {
           "collection_collection": "all-products",
-          "collection_collection_limit": 6
+          "collection_collection_limit": 50
         }
       },
       "global_header": {
         "type": "global_header",
         "settings": {
           "richtext_heading": "<p>Shop</p>",
-          "richtext_subheading": "<p>\n              Explore our collection and discover designs that inspire creativity.\n            </p>"
+          "richtext_subheading": "<p>Explore our collection and discover designs that inspire creativity.</p>"
         }
       }
     },
