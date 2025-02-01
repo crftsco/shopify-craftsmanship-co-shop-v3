@@ -1,0 +1,30 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "collection_search_bestseller": "",
+          "collection_search_bestseller_limit": 6
+        }
+      },
+      "product_category": {
+        "type": "product_category",
+        "settings": {
+          "collection_collection": "all-products",
+          "collection_collection_limit": 6
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}
