@@ -35,6 +35,8 @@
   --craftsmanship-co-website---v3-theme--primary-accent: white;
   --craftsmanship-co-website---color--dark--dark-800: #0d1013;
   --base-color-neutral--neutral-lightest: #eee;
+  --craftsmanship-co-website---v3-theme--tint-line: white;
+  --craftsmanship-co-website---color--neutral--neutral-100: #f6f6f7;
   --craftsmanship-co-website---v3-theme--secondary-text: white;
   --craftsmanship-co-website---v3-theme--invert-text: white;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
@@ -108,7 +110,6 @@
   --craftsmanship-co-website---v3-theme--secondary-brand: white;
   --craftsmanship-co-website---v3-theme--invert-background: white;
   --craftsmanship-co-website---v3-theme--tint-background: white;
-  --craftsmanship-co-website---v3-theme--tint-line: white;
   --craftsmanship-co-website---v3-theme--button-focus: white;
   --craftsmanship-co-website---v3-theme--button-label: white;
   --craftsmanship-co-website---v3-theme--button-label-mute: white;
@@ -134,7 +135,6 @@
   --craftsmanship-co-website---color--dark--dark-400: #181b21;
   --craftsmanship-co-website---color--dark--dark-500: #15181d;
   --craftsmanship-co-website---color--dark--dark-600: #13161a;
-  --craftsmanship-co-website---color--neutral--neutral-100: #f6f6f7;
   --craftsmanship-co-website---color--neutral--neutral-200: #dbdcdd;
   --base-color-neutral--neutral-light: #aaa;
   --craftsmanship-co-website---color--neutral--neutral-400: #9c9ea2;
@@ -647,6 +647,7 @@ figcaption {
 }
 
 .text-size-regular {
+  color: var(--craftsmanship-co-website---color--neutral--neutral-900);
   font-size: 1rem;
 }
 
@@ -1644,10 +1645,10 @@ figcaption {
 }
 
 .mini-cart_line-item_img {
-  border: 1px solid var(--base-color-neutral--neutral-lighter);
-  border-radius: var(--border-radius--medium);
-  background-color: var(--base-color-neutral--neutral-lightest);
+  border: .0625rem solid var(--craftsmanship-co-website---v3-theme--tint-line);
+  background-color: var(--craftsmanship-co-website---color--neutral--neutral-100);
   object-fit: contain;
+  border-radius: 1rem;
   width: 5rem;
   height: 5rem;
 }
@@ -1656,8 +1657,8 @@ figcaption {
   background-color: var(--craftsmanship-co-website---v3-theme--primary-accent);
   border-radius: 1.75rem;
   flex-direction: column;
-  flex: 1;
   justify-content: space-between;
+  height: 100%;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   display: flex;
@@ -3788,6 +3789,16 @@ figcaption {
 .filter_headline {
   justify-content: space-between;
   align-items: center;
+  display: flex;
+}
+
+.mini-cart_empty {
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-accent);
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   display: flex;
 }
 
