@@ -840,14 +840,19 @@ figcaption {
 }
 
 .button {
+  padding: var(--craftsmanship-co-website---v3-typo--body-pt) 1.5rem var(--craftsmanship-co-website---v3-typo--body-pb);
   border: .0625rem solid var(--craftsmanship-co-website---color--neutral--neutral-900);
   background-color: var(--craftsmanship-co-website---color--neutral--neutral-900);
   color: var(--craftsmanship-co-website---v3-theme--primary-accent);
   text-align: center;
   white-space: nowrap;
   border-radius: 1rem;
-  padding: .75rem 1.5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 3.75rem;
   font-weight: 700;
+  display: flex;
 }
 
 .button:hover {
@@ -1666,8 +1671,8 @@ figcaption {
 
 .mini-cart_empty-content {
   flex: 1;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 100%;
   display: flex;
 }
@@ -3794,6 +3799,7 @@ figcaption {
 
 .mini-cart_empty {
   background-color: var(--craftsmanship-co-website---v3-theme--primary-accent);
+  border-radius: 1.75rem;
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
