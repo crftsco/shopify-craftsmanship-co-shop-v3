@@ -29,20 +29,49 @@
 <!--  Alpine Focus Plugin  -->
 <script defer="" src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script><!--  Alpine JS  -->
 <script defer="" src="{{ 'alpinejs3.js' | asset_url }}"></script><script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script><link href="{{ canonical_url }}" rel="canonical">
-<style>[x-cloak] { display: none !important; }
-  [li-cloak_disabled] { display: none !important; }
-/* Setup Font and Background Color if Text is selected */
-::selection {
-  color: #fff;
-  background: #E91B7F;
-}
-::-moz-selection {
-  color: #fff;
-  background: #E91B7F;
-}
-</style><meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#fff" media="(prefers-color-scheme: dark)">
-<script type="application/ld+json">{
+<style>html, body {
+      /* height: 100%!important;*/
+      width: 100%!important;
+      /* position: fixed!important; */
+      display: block!important;
+      padding: 0px!important;
+      margin: 0px!important;
+      top: 0px!important;
+      left: 0px!important;
+      right: 0px!important;
+      bottom: 0px!important;
+      overflow: unset;
+  	}
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+      -webkit-overflow-scrolling: touch;
+      font-feature-settings: "liga";
+      /* overflow: auto; */
+    }
+  	::-moz-selection { /* Code for Firefox */
+      color: #335FFF;
+      background: rgba(217, 217, 217, 0.50);
+    }
+    ::selection {
+      color: #335FFF;
+      background: rgba(217, 217, 217, 0.50);
+    }
+  	video {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+  	}
+    .v3--work-content-rt .w-embed {
+	  margin: 2.5rem 0;
+    }
+  	[x-cloak] { display: none !important; }
+  	[li-cloak_disabled] { display: none !important; }
+</style><script type="application/ld+json">{
              "@context":"http:\/\/schema.org",
              "@type":"WebPage",
              "url":"{{ shop.url }}",
