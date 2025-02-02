@@ -1663,8 +1663,9 @@ figcaption {
   background-color: var(--craftsmanship-co-website---v3-theme--primary-accent);
   border-radius: 1.75rem;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
+  min-height: calc(100vh - 2.5rem);
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   display: flex;
@@ -1943,6 +1944,7 @@ figcaption {
 }
 
 .nav_mini-cart-holder.w--open {
+  z-index: 99999999;
   background-color: #0006;
   display: flex;
 }
@@ -3625,6 +3627,7 @@ figcaption {
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
+  min-height: calc(100vh - 2.5rem);
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   display: flex;
@@ -4342,6 +4345,11 @@ figcaption {
 
 .v3--text-caption.v3--text-color-secondary {
   color: var(--craftsmanship-co-website---v3-theme--secondary-text);
+}
+
+.v3--text-caption.link {
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .v3--float-ui-wrapper--work-type {
@@ -5233,6 +5241,7 @@ figcaption {
 .v3--product-form-radio-button {
   z-index: 0;
   border: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  cursor: pointer;
   border-radius: 1rem;
   width: auto;
   height: auto;
