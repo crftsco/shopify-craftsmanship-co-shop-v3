@@ -1,12 +1,20 @@
 {
     "sections": {
-        "cart": {
-            "type": "cart"
+        "v3_global_header": {
+            "type": "v3_global_header"
+        },
+        "v3_cart": {
+            "type": "v3_cart"
+        },
+        "v3_global_footer": {
+            "type": "v3_global_footer"
         }
     },
     "layout": "cart",
-    "wrapper": "main.main-wrapper",
+    "wrapper": "main.v3--main",
     "order": [
-        "cart"
+        "v3_global_header",
+        "v3_cart",
+        "v3_global_footer"
     ]
 }
