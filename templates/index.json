@@ -1,6 +1,6 @@
 {
     "sections": [],
     "layout": "theme",
-    "wrapper": "",
+    "wrapper": "div.v3--main",
     "order": []
 }
