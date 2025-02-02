@@ -37,14 +37,13 @@
   --base-color-neutral--neutral-lightest: #eee;
   --craftsmanship-co-website---v3-theme--tint-line: white;
   --craftsmanship-co-website---color--neutral--neutral-100: #f6f6f7;
-  --craftsmanship-co-website---v3-theme--secondary-text: white;
   --craftsmanship-co-website---v3-theme--invert-text: white;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --base-color-system--success-green-dark: #17660f;
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #9b1313;
-  --background-color--background-error: var(--base-color-system--error-red);
+  --craftsmanship-co-website---color--mustard--mustard-400: #d8b43a;
   --text-color--text-primary: var(--base-color-neutral--black);
   --background-color--background-warning: var(--base-color-system--warning-yellow);
   --text-color--text-warning: var(--base-color-system--warning-yellow-dark);
@@ -58,6 +57,7 @@
   --craftsmanship-co-website---v3-typo--body-md-size: 1.25rem;
   --craftsmanship-co-website---v3-typo--body-md-lh: 2rem;
   --craftsmanship-co-website---v3-typo--body-md-ls: .0125rem;
+  --craftsmanship-co-website---v3-theme--secondary-text: white;
   --craftsmanship-co-website---v3-typo--heading-md-pt: .1875rem;
   --craftsmanship-co-website---v3-typo--heading-md-pb: .8125rem;
   --craftsmanship-co-website---v3-theme--primary-brand: white;
@@ -87,10 +87,12 @@
   --craftsmanship-co-website---color--neutral--neutral-200: #dbdcdd;
   --craftsmanship-co-website---color--neutral--neutral-600: #54585f;
   --craftsmanship-co-website---color--neutral--neutral-400: #9c9ea2;
-  --base-color-brand--blue-light: #d9e5ff;
+  --craftsmanship-co-website---v3-theme--secondary-background: white;
+  --craftsmanship-co-website---v3-theme--button-label: white;
   --craftsmanship-co-website---v3-typo--heading-sm-size: 2.75rem;
   --craftsmanship-co-website---v3-typo--heading-sm-lh: 3.75rem;
   --craftsmanship-co-website---v3-typo--heading-sm-ls: 0rem;
+  --base-color-brand--blue-light: #d9e5ff;
   --craftsmanship-co-website---v3-typo--heading-sm-pt: .0625rem;
   --craftsmanship-co-website---v3-typo--heading-sm-pb: .4375rem;
   --craftsmanship-co-website---v3-typo--heading-lg-size: 4rem;
@@ -109,12 +111,10 @@
   --craftsmanship-co-website---v3-typo--super-lg-pt: .6875rem;
   --craftsmanship-co-website---v3-typo--super-lg-pb: 2.3125rem;
   --craftsmanship-co-website---v3-theme--primary-background-shade: white;
-  --craftsmanship-co-website---v3-theme--secondary-background: white;
   --craftsmanship-co-website---v3-theme--secondary-brand: white;
   --craftsmanship-co-website---v3-theme--invert-background: white;
   --craftsmanship-co-website---v3-theme--tint-background: white;
   --craftsmanship-co-website---v3-theme--button-focus: white;
-  --craftsmanship-co-website---v3-theme--button-label: white;
   --craftsmanship-co-website---v3-theme--button-label-mute: white;
   --craftsmanship-co-website---v3-theme--text-link: white;
   --craftsmanship-co-website---v3-theme--text-link-hover: white;
@@ -132,7 +132,6 @@
   --base-color-brand--pink: #dd23bb;
   --craftsmanship-co-website---color--cobalt--cobalt-800: #203999;
   --craftsmanship-co-website---color--mustard--mustard-100: #ffd952;
-  --craftsmanship-co-website---color--mustard--mustard-400: #d8b43a;
   --base-color-brand--pink-dark: #3c043b;
   --craftsmanship-co-website---color--dark--dark-100: #1e232c;
   --craftsmanship-co-website---color--dark--dark-400: #181b21;
@@ -160,6 +159,7 @@
   --craftsmanship-co-website---size--xl: 1rem;
   --craftsmanship-co-website---size--2xl: 1.25rem;
   --craftsmanship-co-website---size--3xl: 1.5rem;
+  --background-color--background-error: var(--base-color-system--error-red);
   --craftsmanship-co-website---size--4xl: 2rem;
   --border-color--border-primary: var(--base-color-neutral--neutral-lightest);
   --craftsmanship-co-website---size--5xl: 2.5rem;
@@ -207,22 +207,6 @@
   display: block;
 }
 
-.w-form-formradioinput--inputType-custom {
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-checked {
-  border-width: 4px;
-  border-color: #3898ec;
-}
-
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -266,6 +250,22 @@
 
 .w-checkbox-input--inputType-custom.w--redirected-focus {
   box-shadow: 0 0 3px 1px #3898ec;
+}
+
+.w-form-formradioinput--inputType-custom {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+  box-shadow: 0 0 3px 1px #3898ec;
+}
+
+.w-form-formradioinput--inputType-custom.w--redirected-checked {
+  border-width: 4px;
+  border-color: #3898ec;
 }
 
 .w-layout-grid {
@@ -1592,7 +1592,7 @@ figcaption {
 }
 
 .mini-cart_header {
-  border-bottom: 1px solid var(--craftsmanship-co-website---color--neutral--neutral-900);
+  border-bottom: 1px solid #272c3433;
   justify-content: space-between;
   align-items: center;
   height: 5.25rem;
@@ -1605,7 +1605,7 @@ figcaption {
 .mini-cart_footer {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  border-top: 1px solid var(--craftsmanship-co-website---color--neutral--neutral-900);
+  border-top: 1px solid #272c3433;
   flex-direction: column;
   margin-top: auto;
   padding: 1.5rem;
@@ -1911,7 +1911,7 @@ figcaption {
 }
 
 .icon-embed-xsmall {
-  color: var(--craftsmanship-co-website---v3-theme--secondary-text);
+  color: var(--craftsmanship-co-website---v3-theme--primary-text);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2656,6 +2656,7 @@ figcaption {
 }
 
 .product-header_shipping-icon {
+  color: var(--craftsmanship-co-website---v3-theme--primary-text);
   flex: none;
   width: 1.5rem;
   height: 1.5rem;
@@ -3017,12 +3018,12 @@ figcaption {
 }
 
 .mini-cart_footer-message-item {
-  border-radius: var(--border-radius--medium);
-  background-color: var(--background-color--background-error);
+  background-color: var(--craftsmanship-co-website---color--mustard--mustard-400);
+  border-radius: 1rem;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  padding: .5rem;
+  padding: 1rem 1.25rem;
   display: flex;
 }
 
@@ -4067,6 +4068,10 @@ figcaption {
   display: flex;
 }
 
+.v3--main.v3--main-offset {
+  padding-top: var(--craftsmanship-co-website---v3-theme--globalnav-height-desktop);
+}
+
 .craftsmanship-co-website--v3--globalheader {
   padding-top: var(--craftsmanship-co-website---v3-theme--globalnav-height-desktop);
   flex-flow: column;
@@ -4155,6 +4160,7 @@ figcaption {
   padding-top: .1875rem;
   padding-bottom: .8125rem;
   font-size: 3rem;
+  font-weight: 500;
   line-height: 4.25rem;
 }
 
@@ -4327,6 +4333,14 @@ figcaption {
   padding-bottom: .1875rem;
   font-size: .75rem;
   line-height: 1.25rem;
+}
+
+.v3--text-caption.v3--text-dark {
+  color: var(--craftsmanship-co-website---color--neutral--neutral-900);
+}
+
+.v3--text-caption.v3--text-color-secondary {
+  color: var(--craftsmanship-co-website---v3-theme--secondary-text);
 }
 
 .v3--float-ui-wrapper--work-type {
@@ -4976,11 +4990,9 @@ figcaption {
   display: flex;
 }
 
-.v3--grid {
-  grid-column-gap: 0rem;
-  grid-row-gap: 0rem;
-  border-top: .0625rem solid var(--craftsmanship-co-website---v3-theme--tint-line);
-  border-left: .0625rem solid var(--craftsmanship-co-website---v3-theme--tint-line);
+.v3--grid-products {
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -4988,10 +5000,10 @@ figcaption {
   display: grid;
 }
 
-.v3--grid-col {
+.v3--grid-col-product {
   aspect-ratio: 4 / 5;
-  border-right: .0625rem solid var(--craftsmanship-co-website---v3-theme--tint-line);
-  border-bottom: .0625rem solid var(--craftsmanship-co-website---v3-theme--tint-line);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .v3--card-product-figure {
@@ -5081,6 +5093,273 @@ figcaption {
   letter-spacing: var(--craftsmanship-co-website---v3-typo--heading-md-ls);
   margin: 0;
   font-weight: 500;
+}
+
+.v3--grid-product-single {
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  width: 100%;
+  display: grid;
+}
+
+.v3--grid-col {
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.v3--product-content-figure-wrapper {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.v3--product-content-image {
+  width: 100%;
+  height: 100%;
+}
+
+.v3--product-content-detail-wrapper {
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
+  flex-flow: column;
+  height: 100%;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  display: flex;
+}
+
+.v3--product-content-tag-accent {
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-accent);
+  color: var(--craftsmanship-co-website---color--neutral--neutral-900);
+  letter-spacing: .01rem;
+  border-radius: 999rem;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: block;
+}
+
+.v3--product-content-eyebrown-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+}
+
+.v3--product-content-tag {
+  background-color: var(--craftsmanship-co-website---v3-theme--secondary-background);
+  color: var(--craftsmanship-co-website---v3-theme--secondary-text);
+  letter-spacing: .01rem;
+  border-radius: 999rem;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: block;
+}
+
+.v3--product-content-header {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.v3--product-content-price {
+  padding-top: var(--craftsmanship-co-website---v3-typo--body-pt);
+  padding-bottom: var(--craftsmanship-co-website---v3-typo--body-pb);
+  color: var(--craftsmanship-co-website---v3-theme--secondary-text);
+  font-size: var(--craftsmanship-co-website---v3-typo--body-size);
+  line-height: var(--craftsmanship-co-website---v3-typo--body-lh);
+  letter-spacing: var(--craftsmanship-co-website---v3-typo--body-ls);
+  font-weight: 400;
+}
+
+.v3--product-content-price.compare {
+  color: var(--craftsmanship-co-website---v3-theme--tint-text);
+  text-decoration: line-through;
+}
+
+.v3--product-content-price-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+}
+
+.v3--product-content-cta {
+  border-top: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.v3--product-content-form-wrapper {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.v3--product-form-option-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+}
+
+.v3--product-form-radio {
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-background);
+  min-width: 5rem;
+  margin: 0;
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.v3--product-form-radio-button {
+  z-index: 0;
+  border: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  border-radius: 1rem;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-left: 0;
+  position: absolute;
+  inset: 0%;
+}
+
+.v3--product-form-radio-button.w--redirected-checked {
+  z-index: 0;
+  border-width: .125rem;
+  border-color: var(--craftsmanship-co-website---v3-theme--primary-brand);
+}
+
+.v3--product-form-radio-button-label {
+  z-index: 2;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.v3--product-form-radio-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.v3--product-form-cart {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-flow: column;
+  display: flex;
+}
+
+.craftsmanship-co-website--v3--c-button {
+  background-color: var(--craftsmanship-co-website---v3-theme--button-background);
+  color: var(--craftsmanship-co-website---v3-theme--button-label);
+  border-radius: 999rem;
+  padding: 1rem 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.craftsmanship-co-website--v3--c-button:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+  border: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-background);
+  pointer-events: auto;
+  color: var(--craftsmanship-co-website---v3-theme--primary-text);
+}
+
+.craftsmanship-co-website--v3--c-button:hover {
+  background-color: var(--craftsmanship-co-website---v3-theme--button-hover);
+  text-decoration: none;
+}
+
+.craftsmanship-co-website--v3--c-button:hover:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+  background-color: var(--craftsmanship-co-website---v3-theme--secondary-background);
+}
+
+.v3--c-button {
+  background-color: var(--craftsmanship-co-website---v3-theme--button-background);
+  color: var(--craftsmanship-co-website---v3-theme--button-label);
+  border-radius: 999rem;
+  padding: 1rem 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.v3--c-button:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+  border: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-background);
+  pointer-events: auto;
+  color: var(--craftsmanship-co-website---v3-theme--primary-text);
+}
+
+.v3--c-button:hover {
+  background-color: var(--craftsmanship-co-website---v3-theme--button-hover);
+  text-decoration: none;
+}
+
+.v3--c-button:hover:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+  background-color: var(--craftsmanship-co-website---v3-theme--secondary-background);
+}
+
+.v3--c-button.muted {
+  background-color: var(--craftsmanship-co-website---v3-theme--primary-border);
+  pointer-events: none;
+  color: var(--craftsmanship-co-website---v3-theme--invert-text);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.v3--product-content-status {
+  margin-bottom: 1.25rem;
+}
+
+.v3--product-content-status-wrapper {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.v3--product-content-description-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.v3--product-content-rt h1 {
+  padding-top: var(--craftsmanship-co-website---v3-typo--heading-md-pt);
+  padding-bottom: var(--craftsmanship-co-website---v3-typo--heading-md-pb);
+  font-size: var(--craftsmanship-co-website---v3-typo--heading-md-size);
+}
+
+.v3--product-content-rt h2 {
+  font-size: var(--craftsmanship-co-website---v3-typo--heading-sm-size);
+  line-height: var(--craftsmanship-co-website---v3-typo--heading-sm-lh);
+  letter-spacing: var(--craftsmanship-co-website---v3-typo--heading-sm-ls);
+}
+
+.v3--product-content-rt h3 {
+  padding-top: var(--craftsmanship-co-website---v3-typo--subheading-lg-pt);
+  padding-bottom: var(--craftsmanship-co-website---v3-typo--subheading-lg-pb);
+  font-size: var(--craftsmanship-co-website---v3-typo--subheading-lg-size);
+  line-height: var(--craftsmanship-co-website---v3-typo--subheading-lg-lh);
+  letter-spacing: var(--craftsmanship-co-website---v3-typo--subheading-lg-ls);
+}
+
+.v3--product-content-description {
+  padding-top: var(--craftsmanship-co-website---v3-typo--body-pt);
+  padding-bottom: var(--craftsmanship-co-website---v3-typo--body-pb);
 }
 
 @media screen and (max-width: 991px) {
@@ -5909,7 +6188,7 @@ figcaption {
     display: flex;
   }
 
-  .craftsmanship-co-website--v3--globalheader {
+  .v3--main.v3--main-offset, .craftsmanship-co-website--v3--globalheader {
     padding-top: var(--craftsmanship-co-website---v3-theme--globalnav-height-mobile);
   }
 
@@ -6001,12 +6280,28 @@ figcaption {
     justify-content: flex-end;
   }
 
+  .v3--grid-products {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .v3--globalheader-subheading {
     padding-top: var(--craftsmanship-co-website---v3-typo--subheading-lg-pt);
     padding-bottom: var(--craftsmanship-co-website---v3-typo--subheading-lg-pb);
     font-size: var(--craftsmanship-co-website---v3-typo--subheading-lg-size);
     line-height: var(--craftsmanship-co-website---v3-typo--subheading-lg-lh);
     letter-spacing: var(--craftsmanship-co-website---v3-typo--subheading-lg-ls);
+  }
+
+  .v3--grid-product-single {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .v3--product-content-figure-wrapper {
+    width: 100%;
+  }
+
+  .v3--product-content-detail-wrapper {
+    padding-right: 0;
   }
 }
 
@@ -6561,12 +6856,20 @@ figcaption {
     justify-content: center;
   }
 
+  .v3--grid-products {
+    grid-template-columns: 1fr;
+  }
+
   .v3--globalheader-subheading {
     padding-top: var(--craftsmanship-co-website---v3-typo--subheading-md-pt);
     padding-bottom: var(--craftsmanship-co-website---v3-typo--subheading-md-pb);
     font-size: var(--craftsmanship-co-website---v3-typo--subheading-md-size);
     line-height: var(--craftsmanship-co-website---v3-typo--subheading-md-lh);
     letter-spacing: var(--craftsmanship-co-website---v3-typo--subheading-md-ls);
+  }
+
+  .v3--grid-product-single {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -6965,6 +7268,24 @@ figcaption {
     line-height: var(--craftsmanship-co-website---v3-typo--subheading-sm-lh);
     letter-spacing: var(--craftsmanship-co-website---v3-typo--subheading-sm-ls);
   }
+
+  .craftsmanship-co-website--v3--c-button, .craftsmanship-co-website--v3--c-button:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .craftsmanship-co-website--v3--c-button:hover:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+    background-color: var(--craftsmanship-co-website---v3-theme--secondary-background);
+  }
+
+  .v3--c-button, .v3--c-button:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .v3--c-button:hover:where(.w-variant-c00cf064-5dad-4985-a985-9bbb171f7863) {
+    background-color: var(--craftsmanship-co-website---v3-theme--secondary-background);
+  }
 }
 
 #w-node-_132b329d-a4c8-aa8b-6635-b75d712f230e-b928ee28 {
@@ -7018,10 +7339,6 @@ figcaption {
 
 #w-node-e06700ff-6658-1aaf-8fea-93c3834ae47b-b928ee28 {
   grid-area: 1 / 10 / 2 / 13;
-}
-
-#w-node-efdfe76d-e495-5632-4546-bb1b588eec17-b928ee28 {
-  align-self: start;
 }
 
 #w-node-_946c4dcd-3bf7-2b09-3073-715a0eb0badd-cf39daf1 {
@@ -7243,6 +7560,59 @@ figcaption {
   justify-self: start;
 }
 
+#w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e61-b928ee40 {
+  grid-area: span 1 / span 6 / span 1 / span 6;
+}
+
+#w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e68-b928ee40 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+
+#w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e6b-b928ee40 {
+  grid-area: 1 / 7 / 2 / 13;
+  justify-self: start;
+}
+
+#w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e81-b928ee40 {
+  grid-area: 1 / 7 / 2 / 13;
+}
+
+#w-node-_186a5f41-25c9-00c4-9e88-df65ed85d3a9-b928ee40 {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d05-b928ee40 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d09-b928ee40 {
+  grid-area: 1 / 4 / 2 / 10;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d28-b928ee40 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d2e-b928ee40 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d3c-b928ee40 {
+  grid-area: 1 / 7 / 2 / 10;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d5b-b928ee40 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d5f-b928ee40 {
+  grid-area: 1 / 4 / 2 / 10;
+}
+
+#w-node-f67aeccc-f0b1-febd-140e-1a777e223d67-b928ee40 {
+  grid-area: 1 / 10 / 2 / 13;
+}
+
 #w-node-dde72f15-2dd1-3c3f-ef72-b299bc1979d2-b928ee40 {
   align-self: start;
 }
@@ -7385,6 +7755,63 @@ figcaption {
   #w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-b928ee33 {
     order: 9999;
   }
+
+  #w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e61-b928ee40 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  #w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e68-b928ee40 {
+    grid-area: 1 / 3 / 2 / 7;
+  }
+
+  #w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e6b-b928ee40 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+    justify-self: auto;
+  }
+
+  #w-node-a72caf43-1891-0f4b-f0ef-dc9f16af6e81-b928ee40 {
+    grid-column: 2 / 3;
+  }
+
+  #w-node-_5de84a11-a688-2fde-dbff-724615c3633e-b928ee40 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  #w-node-_186a5f41-25c9-00c4-9e88-df65ed85d3a9-b928ee40 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d05-b928ee40 {
+    grid-column-end: 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d09-b928ee40 {
+    grid-area: 2 / 1 / 3 / 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d28-b928ee40 {
+    grid-column-end: 3;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d2e-b928ee40 {
+    grid-column: 7 / 10;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d3c-b928ee40 {
+    grid-column: 10 / 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d5b-b928ee40 {
+    grid-column-end: 7;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d5f-b928ee40 {
+    grid-column: 7 / 12;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d67-b928ee40 {
+    grid-area: 1 / 12 / 2 / 13;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7407,6 +7834,18 @@ figcaption {
   #w-node-a1ceb44a-b8cb-2c93-169d-8a1bedb58bab-b928ee3a {
     order: -9999;
     justify-self: stretch;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d5b-b928ee40 {
+    grid-column-end: 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d5f-b928ee40 {
+    grid-area: 2 / 1 / 3 / 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d67-b928ee40 {
+    grid-area: 3 / 1 / 4 / 13;
   }
 
   #w-node-a80f8362-260a-7256-86a7-00b709fa7e51-b928ee41 {
@@ -7486,6 +7925,19 @@ figcaption {
   #w-node-_7da89c9c-ec63-34c8-86ac-403c453b6968-b928ee3c {
     grid-area: span 1 / span 1 / span 1 / span 1;
     justify-self: end;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d28-b928ee40 {
+    grid-column-end: 13;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d2e-b928ee40 {
+    grid-area: 2 / 1 / 3 / 7;
+  }
+
+  #w-node-f67aeccc-f0b1-febd-140e-1a777e223d3c-b928ee40 {
+    grid-row: 2 / 3;
+    grid-column-start: 7;
   }
 }
 

@@ -1,16 +1,6 @@
 {
-    "sections": {
-        "hero": {
-            "type": "hero"
-        },
-        "category": {
-            "type": "category"
-        }
-    },
+    "sections": [],
     "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "hero",
-        "category"
-    ]
+    "wrapper": "div.v3--main",
+    "order": []
 }
