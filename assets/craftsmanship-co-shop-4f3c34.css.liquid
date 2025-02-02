@@ -1944,9 +1944,9 @@ figcaption {
 }
 
 .nav_mini-cart-holder.w--open {
-  z-index: 99999999;
   background-color: #0006;
   display: flex;
+  position: static;
 }
 
 .nav_mini-cart-close {
@@ -5010,7 +5010,6 @@ figcaption {
 }
 
 .v3--grid-col-product {
-  aspect-ratio: 4 / 5;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -5062,17 +5061,17 @@ figcaption {
 }
 
 .v3--card-product-price {
+  padding-top: var(--craftsmanship-co-website---v3-typo--caption-pt);
+  padding-bottom: var(--craftsmanship-co-website---v3-typo--caption-pb);
   color: var(--craftsmanship-co-website---color--neutral--neutral-600);
+  font-size: var(--craftsmanship-co-website---v3-typo--caption-size);
+  line-height: var(--craftsmanship-co-website---v3-typo--caption-lh);
   text-align: center;
-  letter-spacing: .01rem;
+  letter-spacing: var(--craftsmanship-co-website---v3-typo--caption-ls);
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-top: .375rem;
-  padding-bottom: .375rem;
-  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem;
   overflow: hidden;
 }
 
@@ -6094,6 +6093,11 @@ figcaption {
     position: relative;
   }
 
+  .nav_mini-cart-holder.w--open, .nav_mini-cart-close {
+    position: fixed;
+    inset: 0%;
+  }
+
   .filter_product-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -6535,8 +6539,14 @@ figcaption {
     display: inline-block;
   }
 
+  .v3--globalnav {
+    z-index: 9999;
+  }
+
   .v3--globalnav-container {
+    z-index: 9;
     height: 100%;
+    position: relative;
   }
 
   .v3--globalnav-grid {
@@ -6578,14 +6588,16 @@ figcaption {
   }
 
   .v3--globalnav-grid-col-menu {
-    z-index: 0;
+    z-index: -2;
     background-color: var(--craftsmanship-co-website---v3-theme--primary-background);
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
     height: calc(100vh - 4.375rem);
     padding: 2.5rem 1.25rem;
+    position: fixed;
     top: 4.375rem;
+    transform: translate(0);
   }
 
   .v3--globalnav-menu-list-wrapper {
@@ -6993,7 +7005,14 @@ figcaption {
 
   .mini-cart_component {
     width: auto;
-    left: 1.25rem;
+    max-width: none;
+    left: 0;
+    right: 0;
+  }
+
+  .mini-cart_full {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .product-item_image-wrapper {
