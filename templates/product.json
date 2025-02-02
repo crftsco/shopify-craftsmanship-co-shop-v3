@@ -16,12 +16,19 @@
     "v3_global_footer": {
       "type": "v3_global_footer",
       "settings": {}
+    },
+    "product_hero_7jbGMK": {
+      "type": "product_hero",
+      "settings": {
+        "text_headline": "Description"
+      }
     }
   },
   "layout": "product",
   "wrapper": "main.v3--main",
   "order": [
     "v3_product_hero",
-    "v3_global_footer"
+    "v3_global_footer",
+    "product_hero_7jbGMK"
   ]
 }
