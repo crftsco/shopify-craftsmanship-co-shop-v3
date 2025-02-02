@@ -5257,6 +5257,7 @@ figcaption {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .v3--product-form-cart {
@@ -5329,6 +5330,10 @@ figcaption {
 .v3--c-button.cart {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.v3--product-form-cart-state-wrapper {
+  display: flex;
 }
 
 .v3--product-content-status {
@@ -5737,6 +5742,57 @@ figcaption {
 
 .text-size-small-2 {
   font-size: .875rem;
+}
+
+.product-header_shipping-icon-3 {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.text-color-red-3 {
+  color: #9b1313;
+}
+
+.form_input-3 {
+  background-color: #0000;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  width: 100%;
+  min-height: 3.5rem;
+  margin-bottom: 0;
+  padding: .5rem 1rem;
+}
+
+.form_input-3.is-quantity {
+  width: 5.4rem;
+  min-height: 3.2rem;
+  margin-bottom: 0;
+}
+
+.product-header_radio-button-3 {
+  border-width: 0;
+  border-color: #000;
+  border-radius: 0%;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-left: 0;
+  position: absolute;
+  inset: 0%;
+}
+
+.product-header_radio-button-3.w--redirected-checked {
+  border-width: 1px;
+  border-color: #000;
+}
+
+.product-header_radio-3 {
+  background-color: #eee;
+  border-radius: .5rem;
+  padding: .4rem 1rem .3rem;
+  font-weight: 600;
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
@@ -6699,7 +6755,7 @@ figcaption {
     padding-top: var(--craftsmanship-co-website---v3-theme--globalnav-height-mobile);
   }
 
-  .product-header_radio-2 {
+  .product-header_radio-2, .product-header_radio-3 {
     background-color: #fff;
   }
 }
@@ -8076,14 +8132,6 @@ figcaption {
 
 #w-node-f67aeccc-f0b1-febd-140e-1a777e223d67-b928ee40 {
   grid-area: 1 / 10 / 2 / 13;
-}
-
-#w-node-fa0a1135-44bb-0946-0d57-96b1f8da71dd-b928ee40 {
-  align-self: start;
-}
-
-#w-node-fa0a1135-44bb-0946-0d57-96b1f8da71ee-b928ee40 {
-  align-self: center;
 }
 
 #w-node-a80f8362-260a-7256-86a7-00b709fa7e51-b928ee41 {
