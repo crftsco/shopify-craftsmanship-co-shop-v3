@@ -5218,9 +5218,16 @@ figcaption {
 
 .v3--product-form-radio {
   background-color: var(--craftsmanship-co-website---v3-theme--primary-background);
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   min-width: 6rem;
+  height: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
   margin: 0;
   padding: .5rem 1rem;
+  display: flex;
   position: relative;
 }
 
@@ -5330,6 +5337,11 @@ figcaption {
 .v3--c-button.cart {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.v3--c-button.full-width {
+  text-align: center;
+  width: 100%;
 }
 
 .v3--product-form-cart-state-wrapper {
@@ -5588,6 +5600,8 @@ figcaption {
   text-align: center;
   width: 6rem;
   height: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
   margin-bottom: 0;
   padding: 1rem 1rem 1rem 1.75rem;
 }
@@ -5598,6 +5612,7 @@ figcaption {
   border: 0 solid #000;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  display: none;
 }
 
 .product-item_image-2 {

@@ -38,11 +38,11 @@
 {% endif %}<div class="v3--product-form-cart"><template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="v3--product-form-cart-state-wrapper">
         <input class="v3--c-input-number cart w-input" maxlength="256" name="Quantity" li-element="add-to-cart-quantity" data-name="Quantity" placeholder="1" type="number" id="Quantity-3" required="" x-model="quantity">
-<a li-element="add-to-cart" href="#" class="v3--c-button cart w-button" @click="addToCart(event, true)" :disabled="!addToCartButton">Add to cart</a>        </div>
+<a li-element="add-to-cart" href="#" class="v3--c-button full-width w-button" @click="addToCart(event, true)" :disabled="!addToCartButton">Add to cart</a>        </div>
     </template>
 <template x-if="!selected_or_first_available_variant.available">
             <div li-js-if="!selected_or_first_available_variant.available" class="v3--product-form-cart-state-wrapper">
-        <a href="#" class="v3--c-button muted w-button">Out of stock</a>        </div>
+        <a href="#" class="v3--c-button muted full-width w-button">Out of stock</a>        </div>
     </template>
 </div>{% endform %}
 </div></div></div></div><div id="w-node-_186a5f41-25c9-00c4-9e88-df65ed85d3a9-b928ee40" class="v3--grid-col"><figure class="v3--product-content-figure-wrapper"><img class="v3--product-content-image" src="{{ image.src | product_img_url: 'master' }}" alt="" sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, (max-width: 991px) 46vw, 30vw" li-object:src="image.src | product_img_url: 'master'" loading="lazy" srcset="{{ '01-p-500.jpg' | asset_url }} 500w, {{ '01-p-800.jpg' | asset_url }} 800w, {{ '01-p-1080.jpg' | asset_url }} 1080w, {{ '01-p-1600.jpg' | asset_url }} 1600w, {{ '01.jpg' | asset_url }} 2000w">
