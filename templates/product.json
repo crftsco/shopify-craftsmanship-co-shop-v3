@@ -2,11 +2,15 @@
     "sections": {
         "v3_product_hero": {
             "type": "v3_product_hero"
+        },
+        "v3_global_footer": {
+            "type": "v3_global_footer"
         }
     },
     "layout": "product",
     "wrapper": "main.v3--main v3--main-offset",
     "order": [
-        "v3_product_hero"
+        "v3_product_hero",
+        "v3_global_footer"
     ]
 }
