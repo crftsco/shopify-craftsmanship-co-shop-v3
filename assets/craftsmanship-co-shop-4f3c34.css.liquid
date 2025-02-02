@@ -1556,8 +1556,8 @@ figcaption {
   align-items: stretch;
   width: 100%;
   max-width: 30rem;
-  height: 100vh;
-  max-height: 100vh;
+  height: 100svh;
+  max-height: 100svh;
   display: flex;
   position: fixed;
   top: 0;
@@ -1665,7 +1665,7 @@ figcaption {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  min-height: calc(100vh - 2.5rem);
+  min-height: calc(100svh - 2.5rem);
   margin: 1.25rem;
   display: flex;
 }
@@ -3626,7 +3626,7 @@ figcaption {
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
-  min-height: calc(100vh - 2.5rem);
+  min-height: calc(100svh - 2.5rem);
   margin: 1.25rem;
   display: flex;
 }
@@ -4046,7 +4046,6 @@ figcaption {
 .v3--globalnav-menu-list-wrapper {
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .v3--globalnav-locale-wrapper {
@@ -6595,6 +6594,7 @@ figcaption {
     padding: 6.75rem 2rem 2.5rem;
     position: fixed;
     inset: 0%;
+    transform: translate(0, -100%);
   }
 
   .v3--globalnav-menu-list-wrapper {
