@@ -8,7 +8,7 @@
         }
     },
     "layout": "product",
-    "wrapper": "main.v3--main v3--main-offset",
+    "wrapper": "main.v3--main",
     "order": [
         "v3_product_hero",
         "v3_global_footer"
