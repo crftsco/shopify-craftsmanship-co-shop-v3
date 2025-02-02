@@ -8,20 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "blog_hero": {
-      "type": "blog_hero",
-      "settings": {}
-    },
-    "blog_articles": {
-      "type": "blog_articles",
-      "settings": {}
-    }
+  "parent": "product.json",
+  "context": {
+    "market": "th"
   },
-  "layout": "blog",
-  "wrapper": "main.main-wrapper",
-  "order": [
-    "blog_hero",
-    "blog_articles"
-  ]
+  "sections": {}
 }
