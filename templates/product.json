@@ -1,16 +1,12 @@
 {
     "sections": {
-        "product_hero": {
-            "type": "product_hero"
-        },
-        "product_recommended": {
-            "type": "product_recommended"
+        "v3_product_hero": {
+            "type": "v3_product_hero"
         }
     },
     "layout": "product",
-    "wrapper": "main.main-wrapper",
+    "wrapper": "main.v3--main v3--main-offset",
     "order": [
-        "product_hero",
-        "product_recommended"
+        "v3_product_hero"
     ]
 }

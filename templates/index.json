@@ -1,28 +1,20 @@
 {
     "sections": {
-        "liquify_hero": {
-            "type": "liquify_hero"
+        "v3_global_header": {
+            "type": "v3_global_header"
         },
-        "hero": {
-            "type": "hero"
+        "v3_product_category": {
+            "type": "v3_product_category"
         },
-        "category": {
-            "type": "category"
-        },
-        "links": {
-            "type": "links"
-        },
-        "content": {
-            "type": "content"
+        "v3_global_footer": {
+            "type": "v3_global_footer"
         }
     },
     "layout": "theme",
-    "wrapper": "main.main-wrapper",
+    "wrapper": "main.v3--main",
     "order": [
-        "liquify_hero",
-        "hero",
-        "category",
-        "links",
-        "content"
+        "v3_global_header",
+        "v3_product_category",
+        "v3_global_footer"
     ]
 }
