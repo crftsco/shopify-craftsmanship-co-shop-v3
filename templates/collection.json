@@ -1,16 +1,20 @@
 {
     "sections": {
-        "collection_hero": {
-            "type": "collection_hero"
+        "v3_collection_header": {
+            "type": "v3_collection_header"
         },
-        "collection_products": {
-            "type": "collection_products"
+        "v3_product_collection": {
+            "type": "v3_product_collection"
+        },
+        "v3_global_footer": {
+            "type": "v3_global_footer"
         }
     },
     "layout": "collection",
-    "wrapper": "main.main-wrapper",
+    "wrapper": "main.v3--main",
     "order": [
-        "collection_hero",
-        "collection_products"
+        "v3_collection_header",
+        "v3_product_collection",
+        "v3_global_footer"
     ]
 }
