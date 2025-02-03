@@ -39,11 +39,11 @@
   --base-color-neutral--neutral-lightest: #eee;
   --craftsmanship-co-website---v3-theme--tint-line: white;
   --craftsmanship-co-website---color--neutral--neutral-100: #f6f6f7;
+  --craftsmanship-co-website---color--mustard--mustard-400: #d8b43a;
   --craftsmanship-co-website---v3-theme--invert-text: white;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #9b1313;
-  --craftsmanship-co-website---color--mustard--mustard-400: #d8b43a;
   --text-color--text-primary: var(--base-color-neutral--black);
   --background-color--background-warning: var(--base-color-system--warning-yellow);
   --text-color--text-warning: var(--base-color-system--warning-yellow-dark);
@@ -1534,8 +1534,16 @@ figcaption {
   padding-left: .25rem;
 }
 
+.mini-cart_line-item_quantity-adjust.pl-4:hover {
+  color: var(--craftsmanship-co-website---color--mustard--mustard-400);
+}
+
 .mini-cart_line-item_quantity-adjust.pr-4 {
   padding-right: .25rem;
+}
+
+.mini-cart_line-item_quantity-adjust.pr-4:hover {
+  color: var(--craftsmanship-co-website---color--mustard--mustard-400);
 }
 
 .mini-cart_line-item_product-info {
@@ -3547,14 +3555,14 @@ figcaption {
   grid-row-gap: 1.25rem;
 }
 
-.v3--globalnav-locale-wrapper {
-  flex-flow: column;
-  justify-content: center;
+.v3--globalnav-shop-control-wrapper {
+  flex-flow: row;
+  justify-content: flex-end;
   align-items: center;
   display: flex;
 }
 
-.v3--globalnav-locale-wrapper.tablet {
+.v3--globalnav-shop-control-wrapper.tablet {
   display: none;
 }
 
@@ -5433,6 +5441,15 @@ figcaption {
   display: grid;
 }
 
+.icon-embed-xsmall-2 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -6162,11 +6179,11 @@ figcaption {
     display: flex;
   }
 
-  .v3--globalnav-locale-wrapper {
+  .v3--globalnav-shop-control-wrapper {
     display: none;
   }
 
-  .v3--globalnav-locale-wrapper.tablet {
+  .v3--globalnav-shop-control-wrapper.tablet {
     display: block;
   }
 
