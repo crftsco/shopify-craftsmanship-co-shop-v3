@@ -5071,7 +5071,7 @@ figcaption {
 
 .v3--cart-item-grid-price {
   color: var(--craftsmanship-co-website---v3-theme--text-link);
-  text-align: right;
+  text-align: left;
   letter-spacing: .01rem;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -5124,6 +5124,12 @@ figcaption {
 .v3--cart-item-grid-price-wrapper {
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+.v3--cart-item-grid-price-wrapper.mobile-only {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: none;
 }
 
 .v3--cart-item-grid-price-compare {
@@ -5239,6 +5245,25 @@ figcaption {
 .v3--globalheader-heading-wrapper {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+}
+
+.v3--cart-item-info-wrapper {
+  width: 100%;
+  min-width: 1rem;
+}
+
+.v3--cart-item-price-mobile {
+  margin-top: .5rem;
+  display: none;
+}
+
+.v3--cart-item-figure-link {
+  width: 5rem;
+  min-width: 5rem;
+  max-width: 5rem;
+  height: 5rem;
+  min-height: 5rem;
+  max-height: 5rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -6700,9 +6725,18 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .v3--cart-item-grid-col.item {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .v3--cart-item-grid-col.item-right {
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .v3--cart-item-grid-col.item-right.mobile, .v3--cart-item-grid-col.item-center.mobile {
+    display: none;
   }
 
   .v3--cart-item-grid-price {
@@ -6713,9 +6747,36 @@ figcaption {
     width: 5rem;
   }
 
+  .v3--cart-item-grid-input.mobile-only {
+    text-align: center;
+    height: 2.5rem;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .v3--cart-item-grid-price-wrapper {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .v3--cart-item-grid-price-wrapper.mobile-only {
+    flex: 1;
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+    display: flex;
+  }
+
+  .v3--cart-item-info-wrapper {
+    padding-bottom: .25rem;
+  }
+
+  .v3--cart-item-price-mobile {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    display: flex;
   }
 }
 

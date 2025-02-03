@@ -20,6 +20,8 @@
               <link rel="apple-touch-icon" type="image/png" href="{{ settings.apple_touch_icon | img_url: '32x32' }}">
             {% endif %}
         
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="keywords" content="Craftsmanship.co, แบรนด์ดีไซน์, ออกแบบแบรนด์, สร้างแบรนด์, สร้างเอกลักษณ์แบรนด์, ที่ปรึกษาแบรนด์, ที่ปรึกษาการสร้างแบรนด์, สร้างแบรนด์ธุรกิจ, Brand Consulting, Media Production, Brand Identity, Graphic Design Thailand, ออกแบบกราฟิก, Thai Graphic Designers Association, งานออกแบบคุณภาพสูง, Corporate Branding, Brand Strategy Thailand, Kwanchai Akkaratammagul, บริการผลิตสื่อ, สร้างภาพลักษณ์แบรนด์">
 <!--  Alpine Focus Plugin  -->
 <script defer="" src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script><!--  Alpine JS  -->
 <script defer="" src="{{ 'alpinejs3.js' | asset_url }}"></script><script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script><link href="{{ canonical_url }}" rel="canonical">
@@ -65,7 +67,8 @@
     }
   	[x-cloak] { display: none !important; }
   	[li-cloak_disabled] { display: none !important; }
-</style><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
+</style><!--  Theme Light/Dark [V3]  -->
+<script type="module" src="https://cdn.craftsmanship.co/v3/theme.js"></script><script src="{{ '_helper.js' | asset_url }}" type="text/javascript"></script>{{ content_for_header }}</head>
 <body data-theme="dark">
 {{ content_for_layout }}
 </body>
