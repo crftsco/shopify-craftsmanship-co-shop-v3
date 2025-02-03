@@ -1,0 +1,7 @@
+<div class="w-layout-blockcontainer v3--container w-container"><div class="v3--collection-wrapper w-dyn-list"><div role="list" class="v3--grid-products w-dyn-items">{% for collection in collections %}    <div li-for="collection in collections" role="listitem" class="v3--grid-col-product w-dyn-item">
+                                    
+                            <a li-object:href="collection.url" href="{{ collection.url }}" class="v3--card-collection-wrapper w-inline-block"><img src="{{ collection.featured_image | img_url: 'master' }}" loading="lazy" li-object:src="collection.featured_image | img_url: 'master'" alt="" class="v3--card-collection-image">
+<div class="v3--card-collection-shade"><div li-object="collection.title" class="v3--card-collection-heading-text">{{ collection.title }}</div></div></a>
+                            
+                        </div>
+{% endfor %}</div><div class="v3--collection-empty w-dyn-empty"><div>No items found.</div></div></div></div> {% schema %} {"tag":"section","name":"V3 Collection List","class":"v3--section","presets":[{"name":"V3 Collection List","category":"Liquify","blocks":[]}]} {% endschema %}

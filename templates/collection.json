@@ -1,34 +1,20 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
-  "sections": {
-    "v3_collection_header_jbYgTL": {
-      "type": "v3_collection_header",
-      "settings": {
-        "richtext_subheading": "<p>Explore our collection and discover designs that inspire creativity.</p>"
-      }
+    "sections": {
+        "v3_collection_header": {
+            "type": "v3_collection_header"
+        },
+        "v3_product_collection": {
+            "type": "v3_product_collection"
+        },
+        "v3_global_footer": {
+            "type": "v3_global_footer"
+        }
     },
-    "v3_product_collectio_WXzYhF": {
-      "type": "v3_product_collectio",
-      "settings": {}
-    },
-    "v3_global_footer_hBdaAh": {
-      "type": "v3_global_footer",
-      "settings": {}
-    }
-  },
-  "layout": "collection",
-  "wrapper": "main.main-wrapper",
-  "order": [
-    "v3_collection_header_jbYgTL",
-    "v3_product_collectio_WXzYhF",
-    "v3_global_footer_hBdaAh"
-  ]
+    "layout": "collection",
+    "wrapper": "main.v3--main",
+    "order": [
+        "v3_collection_header",
+        "v3_product_collection",
+        "v3_global_footer"
+    ]
 }
