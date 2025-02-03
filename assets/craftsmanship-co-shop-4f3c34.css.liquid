@@ -5454,6 +5454,21 @@ figcaption {
   display: flex;
 }
 
+.v3--cart-item-grid-header {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  border-bottom: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.v3--cart-item-grid-header.header {
+  border-bottom: .0625rem solid var(--craftsmanship-co-website---v3-theme--primary-border);
+  border-bottom: .0625rem solid #fff;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -6418,6 +6433,10 @@ figcaption {
 
   .v3--content-wrapper-small {
     width: 100%;
+  }
+
+  .v3--cart-item-grid-header.header {
+    display: none;
   }
 }
 
@@ -7398,6 +7417,10 @@ figcaption {
 
   .v3--account-table-wrapper {
     min-width: 22.5rem;
+  }
+
+  .v3--cart-item-grid-header.item {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
