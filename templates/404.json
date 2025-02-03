@@ -1,12 +1,16 @@
 {
     "sections": {
-        "404": {
-            "type": "404"
+        "v3_page_not_found": {
+            "type": "v3_page_not_found"
+        },
+        "v3_global_footer": {
+            "type": "v3_global_footer"
         }
     },
     "layout": "404",
-    "wrapper": "main.main-wrapper",
+    "wrapper": "main.v3--main",
     "order": [
-        "404"
+        "v3_page_not_found",
+        "v3_global_footer"
     ]
 }
