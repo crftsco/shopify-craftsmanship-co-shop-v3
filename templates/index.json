@@ -12,7 +12,8 @@
     "v3_global_header": {
       "type": "v3_global_header",
       "settings": {
-        "richtext_heading": "<p>Cart</p>"
+        "richtext_heading": "<p>Shop</p>",
+        "richtext_subheading": "<p>Explore our collection and discover designs that inspire creativity.</p>"
       }
     },
     "v3_product_category": {
