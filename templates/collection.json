@@ -18,12 +18,17 @@
     "v3_product_collectio_WXzYhF": {
       "type": "v3_product_collectio",
       "settings": {}
+    },
+    "v3_global_footer_hBdaAh": {
+      "type": "v3_global_footer",
+      "settings": {}
     }
   },
   "layout": "collection",
   "wrapper": "main.main-wrapper",
   "order": [
     "v3_collection_header_jbYgTL",
-    "v3_product_collectio_WXzYhF"
+    "v3_product_collectio_WXzYhF",
+    "v3_global_footer_hBdaAh"
   ]
 }
