@@ -1,9 +1,7 @@
-<div class="w-layout-blockcontainer v3--container w-container"><div class="v3--collection-wrapper w-dyn-list"><div role="list" class="v3--grid-products w-dyn-items">{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
-<div role="listitem" class="v3--grid-col-product w-dyn-item">
-    
-    <a li-object:href="product.url" href="{{ product.url }}" class="v3--card-product w-inline-block"><figure class="v3--card-product-figure"><img src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" class="v3--figure-product-image">
+<div class="w-layout-blockcontainer v3--container w-container"><div class="v3--collection-wrapper w-dyn-list"><div role="list" class="v3--grid-products w-dyn-items">{% for product in collections.all.products %}    <div li-for="product in collections.all.products" role="listitem" class="v3--grid-col-product w-dyn-item">
+                                    
+                            <a li-object:href="product.url" href="{{ product.url }}" class="v3--card-product w-inline-block"><figure class="v3--card-product-figure"><img src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" class="v3--figure-product-image">
 </figure><div class="v3--card-product-content"><div li-object="product.title" class="v3--card-product-title">{{ product.title }}</div><div class="w-layout-hflex v3--card-product-price-wrapper"><div li-object="product.compare_at_price | money" class="v3--card-product-price compare">{{ product.compare_at_price | money }}</div><div li-object="product.price | money" class="v3--card-product-price">{{ product.price | money }}</div></div></div></a>
-    
-</div>
-{% endfor %}
-</div><div class="v3--collection-empty w-dyn-empty"><div>No items found.</div></div></div></div> {% schema %} {"tag":"section","name":"V3 Product Category","class":"v3--section","settings":[{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6}],"presets":[{"name":"V3 Product Category","category":"Liquify","blocks":[]}]} {% endschema %}
+                            
+                        </div>
+{% endfor %}</div><div class="v3--collection-empty w-dyn-empty"><div>No items found.</div></div></div></div> {% schema %} {"tag":"section","name":"V3 Product Category","class":"v3--section","presets":[{"name":"V3 Product Category","category":"Liquify","blocks":[]}]} {% endschema %}
