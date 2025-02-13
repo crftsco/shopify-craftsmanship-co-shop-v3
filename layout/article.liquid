@@ -114,7 +114,7 @@
 <script>function cartToggle() {
   console.log("cart");
   var clicked = false;
-  $('.nav_mini-cart').on('click touchstart', function (e) {
+  $('.nav_shop-icon').on('click touchstart', function (e) {
     e.preventDefault();
     e.stopPropagation();
     if (!clicked) {
@@ -126,7 +126,7 @@
     }
   });
   $(document).on('click touchstart', function (e) {
-    if (clicked && !$(e.target).closest('.nav_mini-cart').length) {
+    if (clicked && !$(e.target).closest('.nav_shop-icon').length) {
       closeCart();
     }
   });
