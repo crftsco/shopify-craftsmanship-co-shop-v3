@@ -85,7 +85,32 @@
 <script type="module" src="https://cdn.craftsmanship.co/v3/script.js"></script>
 <script type="module" src="https://cdn.craftsmanship.co/v3/work.js"></script>
  -->
-<script>console.log("test footer script");  
+<script>function cartToggle() {
+  console.log("cart");
+  var clicked = false;
+  $('.nav_mini-cart').on('click touchstart', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!clicked) {
+      console.log('cart toggle false');
+      $('body').css({ 'height': '100vh', 'overflow': 'hidden' });
+      clicked = true;
+    } else {
+      closeCart();
+    }
+  });
+  $(document).on('click touchstart', function (e) {
+    if (clicked && !$(e.target).closest('.nav_mini-cart').length) {
+      closeCart();
+    }
+  });
+  function closeCart() {
+    console.log('cart toggle true');
+    $('body').css({ 'height': 'auto', 'overflow': 'unset' });
+    clicked = false;
+  }
+}
+cartToggle(); 
 </script>{% render 'search_javascript' %}
 
 </body>
