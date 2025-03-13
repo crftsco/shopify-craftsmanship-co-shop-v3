@@ -150,7 +150,7 @@ span {
     e.stopPropagation();
     if (!clicked) {
       console.log('cart toggle false');
-      $('body').css({ 'height': '100vh', 'overflow': 'hidden' });
+      //$('body').css({ 'height': '100vh', 'overflow': 'hidden' });
       clicked = true;
     } else {
       closeCart();
@@ -163,7 +163,7 @@ span {
   });
   function closeCart() {
     console.log('cart toggle true');
-    $('body').css({ 'height': 'auto', 'overflow': 'unset' });
+    //$('body').css({ 'height': 'auto', 'overflow': 'unset' });
     clicked = false;
   }
 }
