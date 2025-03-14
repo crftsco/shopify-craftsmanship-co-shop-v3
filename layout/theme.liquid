@@ -158,6 +158,26 @@ span {
   }
 }
 cartToggle();
+function navToggle() {
+  var clicked = 'false';
+  $('.w-nav-button').click(function (e) {
+    e.preventDefault();
+    var overflowState = 'unset';
+    if (clicked == 'false') {
+      $('html').css('height', '100%');
+      $('html').css('position', 'absolute');
+      overflowState = 'hidden';
+      clicked = 'true';
+    } else {
+      $('html').css('height', 'auto');
+      $('html').css('position', 'relative');
+      overflowState = 'unset';
+      clicked = 'false';
+    }
+    $('html, body').css('overflow', overflowState);
+  });
+}
+navToggle();
 </script>{% render 'search_javascript' %}
 
 </body>
