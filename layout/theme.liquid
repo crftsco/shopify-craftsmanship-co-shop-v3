@@ -144,6 +144,15 @@ span {
  -->
 <script>function cartToggle() {
   console.log('cart go');
+  var clicked = false;
+  $('.nav_shop-icon').on('click touchstart', function (e) {
+    e.preventDefault();
+    if (!clicked) {
+      console.log('cart toggle false');
+    } else {
+      console.log('cart toggle true');
+    }
+  });
 }
 cartToggle();
 </script>{% render 'search_javascript' %}
