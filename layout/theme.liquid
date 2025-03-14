@@ -143,32 +143,17 @@ span {
 <script type="module" src="https://cdn.craftsmanship.co/v3/work.js"></script>
  -->
 <script>function cartToggle() {
-	console.log("cart");
-  	var clicked = false;
-  	$('.nav_shop-icon').on('click touchstart', function (e) {
-    	e.preventDefault();
-    	e.stopPropagation();
-    	if (!clicked) {
-          console.log('cart toggle false');
-          $('body').css({ 'height': '100vh', 'overflow': 'hidden' });
-          clicked = true;
-        } else {
-          closeCart();
-        }
-  	});
-  	$(document).on('click touchstart', function (e) {
-      if ($(e.target).closest('.nav_account-icon').length) {
-        return; 
-      }
-      if (clicked && !$(e.target).closest('.nav_shop-icon').length) {
-        closeCart();
-      }
-  	});
-    function closeCart() {
-        console.log('cart toggle true');
-        $('body').css({ 'height': 'auto', 'overflow': 'unset' });
-        clicked = false;
-    }
+  console.log('cart go');
+  var clicked = false;
+  $('.nav_shop-icon').on('click touchstart', function(e) {
+    e.prevenDefault();
+    if (!clicked) {
+      console.log('cart toggle false');
+      clicked = true;
+    } else {
+      console.log('cart toggle true');
+      clicked = false;
+  }
 }
 cartToggle();
   /*
