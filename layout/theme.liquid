@@ -147,12 +147,26 @@ span {
   var clicked = false;
   $('#w-dropdown-toggle-0').on('click touchstart', function (e) {
     e.preventDefault();
+    e.stopPropagation();
     if (!clicked) {
       console.log('cart toggle false');
+      $('body').css({ 'height': '100vh', 'overflow': 'hidden' });
+      clicked = true;
     } else {
       console.log('cart toggle true');
+      closeCart();
     }
   });
+  $(document).on('click touchstart', function (e) {
+    if (clicked && !$(e.target).closest('#w-dropdown-toggle-0').length) {
+      closeCart();
+    }
+  });
+  function closeCart() {
+    console.log('cart toggle true');
+    $('body').css({ 'height': 'auto', 'overflow': 'unset' });
+    clicked = false;
+  }
 }
 cartToggle();
 </script>{% render 'search_javascript' %}
