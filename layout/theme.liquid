@@ -144,46 +144,8 @@ span {
  -->
 <script>function cartToggle() {
   console.log('cart go');
-  var clicked = false;
-  $('.nav_shop-icon').on('click touchstart', function(e) {
-    e.prevenDefault();
-    if (!clicked) {
-      console.log('cart toggle false');
-      clicked = true;
-    } else {
-      console.log('cart toggle true');
-      clicked = false;
-  }
 }
 cartToggle();
-  /*
-function cartToggle() {
-  console.log("cart");
-  var clicked = false;
-  $('.nav_shop-icon').on('click touchstart', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    if (!clicked) {
-      console.log('cart toggle false');
-      $('body').css({ 'height': '100vh', 'overflow': 'hidden' });
-      clicked = true;
-    } else {
-      closeCart();
-    }
-  });
-  $(document).on('click touchstart', function (e) {
-    if (clicked && !$(e.target).closest('.nav_shop-icon').length) {
-      closeCart();
-    }
-  });
-  function closeCart() {
-    console.log('cart toggle true');
-    $('body').css({ 'height': 'auto', 'overflow': 'unset' });
-    clicked = false;
-  }
-}
-cartToggle(); 
-*/
 </script>{% render 'search_javascript' %}
 
 </body>
